@@ -1,15 +1,23 @@
-window.requirejs.config({
-    baseUrl: 'http://localhost:8080/',
-})
+type Cdn<T extends [any, unknown][]> = {
+    [K in keyof T & `${number}` as T[K][0]]: CdnPackage<T[K][1]>
+}
 
-export class Cdn<T> {
-    static create<T>(name: string) {
-        return new Cdn<T>(name)
-    }
+type CdnPackage<T> = {
+    name: string
+    pack: T
+    isLoaded: boolean
+    isLoading: boolean
+    load(): void
+}
 
+class CdnItem<T> implements CdnPackage<T> {
     private _name: string
     private _pack: T | null
     private _load: boolean
+
+    get name() {
+        return this._name
+    }
 
     get pack() {
         if (this._pack === null) {
@@ -42,4 +50,16 @@ export class Cdn<T> {
             })
         }
     }
+}
+
+export const createCdn = <T extends [any, unknown][] | []>(baseUrl: string, config: string[]) => {
+    window.requirejs.config({ baseUrl })
+
+    const cdn = {} as Cdn<T>
+
+    for (const name of config) {
+        cdn[name as keyof T] = new CdnItem<any>(name)
+    }
+
+    return cdn
 }

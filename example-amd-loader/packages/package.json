@@ -11,6 +11,7 @@
     "package2": "https://github.com/dmitryakatev/package2.git"
   },
   "devDependencies": {
+    "@types/requirejs": "^2.1.37",
     "ts-loader": "^9.5.2",
     "typescript": "^5.7.3",
     "webpack": "^5.98.0",
