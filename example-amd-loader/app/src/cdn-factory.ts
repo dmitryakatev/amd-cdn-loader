@@ -9,7 +9,7 @@ export class Cdn<T> {
 
     private _name: string
     private _pack: T | null
-    private _task: Promise<void> | null
+    private _load: boolean
 
     get pack() {
         if (this._pack === null) {
@@ -24,23 +24,21 @@ export class Cdn<T> {
     }
 
     get isLoading() {
-        return this._task !== null
+        return this._load
     }
 
     constructor(name: string) {
         this._name = name
         this._pack = null
-        this._task = null
+        this._load = false
     }
 
     public load(): void {
         if (!this.isLoaded && !this.isLoading) {
-            this._task = new Promise<void>((resolve) => {
-                window.requirejs([this._name], (pack: T) => {
-                    this._task = null
-                    this._pack = pack
-                    resolve()
-                })
+            this._load = true
+            window.requirejs([this._name], (pack: T) => {
+                this._load = false
+                this._pack = pack
             })
         }
     }

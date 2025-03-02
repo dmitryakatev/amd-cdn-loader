@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
-    "build": "node builder.js"
+    "build": "node builder.js",
+    "server": "npx http-server"
   },
   "dependencies": {
     "package1": "https://github.com/dmitryakatev/package1.git",

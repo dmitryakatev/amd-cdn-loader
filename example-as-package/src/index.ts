@@ -1,5 +1,5 @@
 import { Calc, Item } from 'package1'
-// import { CalcSub } from 'package2'
+import { CalcSub } from 'package2'
 
 const $div = document.createElement('div')
 $div.innerHTML = `
@@ -17,11 +17,11 @@ $button1.addEventListener('click', () => {
     console.log(result)
 })
 
-// $button2.addEventListener('click', () => {
-//     const calc = new CalcSub({ value1: 2, value2: 1 })
-//     const result = calc.calc()
+$button2.addEventListener('click', () => {
+    const calc = new CalcSub({ value1: 2, value2: 1 })
+    const result = calc.calc()
     
-//     console.log(result)
-// })
+    console.log(result)
+})
 
 document.body.appendChild($div)

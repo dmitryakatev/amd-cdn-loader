@@ -20,14 +20,14 @@ return /******/ (() => { // webpackBootstrap
 /*!*************************!*\
   !*** ./src/calc-sub.ts ***!
   \*************************/
-/***/ ((__unused_webpack_module, __nested_webpack_exports__, __nested_webpack_require_757__) => {
+/***/ ((__unused_webpack_module, __nested_webpack_exports__, __nested_webpack_require_739__) => {
 
-__nested_webpack_require_757__.r(__nested_webpack_exports__);
-/* harmony export */ __nested_webpack_require_757__.d(__nested_webpack_exports__, {
+__nested_webpack_require_739__.r(__nested_webpack_exports__);
+/* harmony export */ __nested_webpack_require_739__.d(__nested_webpack_exports__, {
 /* harmony export */   CalcSub: () => (/* binding */ CalcSub)
 /* harmony export */ });
-/* harmony import */ var package1__WEBPACK_IMPORTED_MODULE_0__ = __nested_webpack_require_757__(/*! package1 */ "package1");
-/* harmony import */ var package1__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__nested_webpack_require_757__.n(package1__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var package1__WEBPACK_IMPORTED_MODULE_0__ = __nested_webpack_require_739__(/*! package1 */ "package1");
+/* harmony import */ var package1__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__nested_webpack_require_739__.n(package1__WEBPACK_IMPORTED_MODULE_0__);
 
 class CalcSub {
     constructor(options) {
@@ -58,7 +58,7 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_package1__;
 /******/ 	var __webpack_module_cache__ = {};
 /******/ 	
 /******/ 	// The require function
-/******/ 	function __nested_webpack_require_1970__(moduleId) {
+/******/ 	function __nested_webpack_require_1914__(moduleId) {
 /******/ 		// Check if module is in cache
 /******/ 		var cachedModule = __webpack_module_cache__[moduleId];
 /******/ 		if (cachedModule !== undefined) {
@@ -72,7 +72,7 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_package1__;
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __nested_webpack_require_1970__);
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __nested_webpack_require_1914__);
 /******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
@@ -82,11 +82,11 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_package1__;
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
 /******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__nested_webpack_require_1970__.n = (module) => {
+/******/ 		__nested_webpack_require_1914__.n = (module) => {
 /******/ 			var getter = module && module.__esModule ?
 /******/ 				() => (module['default']) :
 /******/ 				() => (module);
-/******/ 			__nested_webpack_require_1970__.d(getter, { a: getter });
+/******/ 			__nested_webpack_require_1914__.d(getter, { a: getter });
 /******/ 			return getter;
 /******/ 		};
 /******/ 	})();
@@ -94,9 +94,9 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_package1__;
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
-/******/ 		__nested_webpack_require_1970__.d = (exports, definition) => {
+/******/ 		__nested_webpack_require_1914__.d = (exports, definition) => {
 /******/ 			for(var key in definition) {
-/******/ 				if(__nested_webpack_require_1970__.o(definition, key) && !__nested_webpack_require_1970__.o(exports, key)) {
+/******/ 				if(__nested_webpack_require_1914__.o(definition, key) && !__nested_webpack_require_1914__.o(exports, key)) {
 /******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 				}
 /******/ 			}
@@ -105,13 +105,13 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_package1__;
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
-/******/ 		__nested_webpack_require_1970__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 		__nested_webpack_require_1914__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
-/******/ 		__nested_webpack_require_1970__.r = (exports) => {
+/******/ 		__nested_webpack_require_1914__.r = (exports) => {
 /******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
 /******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
 /******/ 			}
@@ -126,11 +126,11 @@ var __nested_webpack_exports__ = {};
 /*!**********************!*\
   !*** ./src/index.ts ***!
   \**********************/
-__nested_webpack_require_1970__.r(__nested_webpack_exports__);
-/* harmony export */ __nested_webpack_require_1970__.d(__nested_webpack_exports__, {
+__nested_webpack_require_1914__.r(__nested_webpack_exports__);
+/* harmony export */ __nested_webpack_require_1914__.d(__nested_webpack_exports__, {
 /* harmony export */   CalcSub: () => (/* reexport safe */ _calc_sub__WEBPACK_IMPORTED_MODULE_0__.CalcSub)
 /* harmony export */ });
-/* harmony import */ var _calc_sub__WEBPACK_IMPORTED_MODULE_0__ = __nested_webpack_require_1970__(/*! ./calc-sub */ "./src/calc-sub.ts");
+/* harmony import */ var _calc_sub__WEBPACK_IMPORTED_MODULE_0__ = __nested_webpack_require_1914__(/*! ./calc-sub */ "./src/calc-sub.ts");
 
 
 })();

@@ -20,10 +20,10 @@ return /******/ (() => { // webpackBootstrap
 /*!*********************!*\
   !*** ./src/calc.ts ***!
   \*********************/
-/***/ ((__unused_webpack_module, __nested_webpack_exports__, __nested_webpack_require_641__) => {
+/***/ ((__unused_webpack_module, __nested_webpack_exports__, __nested_webpack_require_623__) => {
 
-__nested_webpack_require_641__.r(__nested_webpack_exports__);
-/* harmony export */ __nested_webpack_require_641__.d(__nested_webpack_exports__, {
+__nested_webpack_require_623__.r(__nested_webpack_exports__);
+/* harmony export */ __nested_webpack_require_623__.d(__nested_webpack_exports__, {
 /* harmony export */   Calc: () => (/* binding */ Calc)
 /* harmony export */ });
 class Calc {
@@ -46,10 +46,10 @@ class Calc {
 /*!*********************!*\
   !*** ./src/item.ts ***!
   \*********************/
-/***/ ((__unused_webpack_module, __nested_webpack_exports__, __nested_webpack_require_1316__) => {
+/***/ ((__unused_webpack_module, __nested_webpack_exports__, __nested_webpack_require_1272__) => {
 
-__nested_webpack_require_1316__.r(__nested_webpack_exports__);
-/* harmony export */ __nested_webpack_require_1316__.d(__nested_webpack_exports__, {
+__nested_webpack_require_1272__.r(__nested_webpack_exports__);
+/* harmony export */ __nested_webpack_require_1272__.d(__nested_webpack_exports__, {
 /* harmony export */   Item: () => (/* binding */ Item)
 /* harmony export */ });
 class Item {
@@ -71,7 +71,7 @@ class Item {
 /******/ 	var __webpack_module_cache__ = {};
 /******/ 	
 /******/ 	// The require function
-/******/ 	function __nested_webpack_require_1975__(moduleId) {
+/******/ 	function __nested_webpack_require_1906__(moduleId) {
 /******/ 		// Check if module is in cache
 /******/ 		var cachedModule = __webpack_module_cache__[moduleId];
 /******/ 		if (cachedModule !== undefined) {
@@ -85,7 +85,7 @@ class Item {
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __nested_webpack_require_1975__);
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __nested_webpack_require_1906__);
 /******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
@@ -95,9 +95,9 @@ class Item {
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
-/******/ 		__nested_webpack_require_1975__.d = (exports, definition) => {
+/******/ 		__nested_webpack_require_1906__.d = (exports, definition) => {
 /******/ 			for(var key in definition) {
-/******/ 				if(__nested_webpack_require_1975__.o(definition, key) && !__nested_webpack_require_1975__.o(exports, key)) {
+/******/ 				if(__nested_webpack_require_1906__.o(definition, key) && !__nested_webpack_require_1906__.o(exports, key)) {
 /******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 				}
 /******/ 			}
@@ -106,13 +106,13 @@ class Item {
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
-/******/ 		__nested_webpack_require_1975__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 		__nested_webpack_require_1906__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
-/******/ 		__nested_webpack_require_1975__.r = (exports) => {
+/******/ 		__nested_webpack_require_1906__.r = (exports) => {
 /******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
 /******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
 /******/ 			}
@@ -127,13 +127,13 @@ var __nested_webpack_exports__ = {};
 /*!**********************!*\
   !*** ./src/index.ts ***!
   \**********************/
-__nested_webpack_require_1975__.r(__nested_webpack_exports__);
-/* harmony export */ __nested_webpack_require_1975__.d(__nested_webpack_exports__, {
+__nested_webpack_require_1906__.r(__nested_webpack_exports__);
+/* harmony export */ __nested_webpack_require_1906__.d(__nested_webpack_exports__, {
 /* harmony export */   Calc: () => (/* reexport safe */ _calc__WEBPACK_IMPORTED_MODULE_0__.Calc),
 /* harmony export */   Item: () => (/* reexport safe */ _item__WEBPACK_IMPORTED_MODULE_1__.Item)
 /* harmony export */ });
-/* harmony import */ var _calc__WEBPACK_IMPORTED_MODULE_0__ = __nested_webpack_require_1975__(/*! ./calc */ "./src/calc.ts");
-/* harmony import */ var _item__WEBPACK_IMPORTED_MODULE_1__ = __nested_webpack_require_1975__(/*! ./item */ "./src/item.ts");
+/* harmony import */ var _calc__WEBPACK_IMPORTED_MODULE_0__ = __nested_webpack_require_1906__(/*! ./calc */ "./src/calc.ts");
+/* harmony import */ var _item__WEBPACK_IMPORTED_MODULE_1__ = __nested_webpack_require_1906__(/*! ./item */ "./src/item.ts");
 
 
 
